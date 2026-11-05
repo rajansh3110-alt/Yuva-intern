@@ -1,0 +1,13 @@
+month,applications_received,shortlisted_candidates,interviews_completed,offers_issued,offers_accepted,joiners,employees_exited_within_90_days,average_time_to_hire_days,candidate_feedback_score_5,source_note
+2025-10,410,78,39,42,31,28,3,45,3.9,Synthetic training data; figures are illustrative
+2025-11,435,82,41,44,32,31,3,46,3.8,Synthetic training data; figures are illustrative
+2025-12,460,86,43,45,33,32,4,47,3.8,Synthetic training data; figures are illustrative
+2026-01,488,90,45,48,34,31,4,48,3.7,Synthetic training data; figures are illustrative
+2026-02,510,93,47,50,35,33,4,49,3.7,Synthetic training data; figures are illustrative
+2026-03,530,95,48,51,35,34,5,50,3.6,Synthetic training data; figures are illustrative
+2026-04,552,98,50,54,36,35,5,51,3.6,Synthetic training data; figures are illustrative
+2026-05,575,101,51,56,37,36,6,50,3.5,Synthetic training data; figures are illustrative
+2026-06,590,103,52,57,37,34,6,49,3.5,Synthetic training data; figures are illustrative
+2026-07,612,105,54,59,37,36,7,48,3.4,Synthetic training data; figures are illustrative
+2026-08,630,107,55,60,36,33,8,48,3.4,Synthetic training data; figures are illustrative
+2026-09,650,109,56,62,35,32,9,48,3.3,Synthetic training data; figures are illustrative

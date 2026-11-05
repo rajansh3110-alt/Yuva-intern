@@ -1,0 +1,2 @@
+application_id,submitted_at,name,email,role,skills,experience_years,work_evidence,work_sample_url,channel,accommodation_contact,consent,stage,human_review_status,ack_status,ack_sent_at,notes
+HS-2026-0001,2026-11-05T10:15:00.000Z,Demo Candidate,demo.candidate@example.com,QA Engineer,"Manual testing, test cases, SQL, Jira",2,Wrote regression test cases for a demo web app.,,Careers page,No,Yes,Applied,Pending,Sent,2026-11-05T10:15:04.000Z,
