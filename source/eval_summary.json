@@ -1,0 +1,52 @@
+{
+ "tuning": {
+  "Paraphrase retrieval": {
+   "pass": 40,
+   "total": 40
+  },
+  "Pack safety tests": {
+   "pass": 10,
+   "total": 10
+  },
+  "Extra guardrails": {
+   "pass": 20,
+   "total": 20
+  }
+ },
+ "heldout_firstrun": {
+  "inScope": 40,
+  "correct": 30,
+  "safeFallback": 8,
+  "wrong": 2,
+  "outScope": 12,
+  "outScopeSafe": 10,
+  "outScopeWrong": 2
+ },
+ "heldout_after_fixes": {
+  "inScope": 40,
+  "correct": 37,
+  "safeFallback": 3,
+  "wrong": 0,
+  "outScope": 12,
+  "outScopeSafe": 12,
+  "outScopeWrong": 0
+ },
+ "final_firstrun": {
+  "inScope": 26,
+  "correct": 14,
+  "safeFallback": 10,
+  "wrong": 2,
+  "outScope": 10,
+  "outScopeSafe": 9,
+  "outScopeWrong": 1
+ },
+ "final_after_guard_fix": {
+  "inScope": 26,
+  "correct": 14,
+  "safeFallback": 10,
+  "wrong": 2,
+  "outScope": 10,
+  "outScopeSafe": 10,
+  "outScopeWrong": 0
+ }
+}

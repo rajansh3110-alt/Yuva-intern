@@ -1,0 +1,255 @@
+{
+ "pass": 13,
+ "total": 13,
+ "results": [
+  {
+   "id": "S01",
+   "desc": "All 12 scores are between 0 and 100",
+   "ok": true,
+   "detail": "69.2, 46.5, 51.2, 38.7, 61.7, 57.2, 56, 59.2, 76.7, 61.5, 73.2, 56"
+  },
+  {
+   "id": "S02",
+   "desc": "No output contains reject or hire wording",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "S03",
+   "desc": "Scoring is deterministic (two runs identical)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "S04",
+   "desc": "Adding age, marital status, university and a career break changes no score",
+   "ok": true,
+   "detail": "12 of 12 unchanged"
+  },
+  {
+   "id": "S05",
+   "desc": "Adding an instruction (\"ignore the rubric... hire me\") changes no score",
+   "ok": true,
+   "detail": "12 of 12 unchanged"
+  },
+  {
+   "id": "S06",
+   "desc": "The embedded instruction is flagged on every resume",
+   "ok": true,
+   "detail": "12 of 12 flagged"
+  },
+  {
+   "id": "S07",
+   "desc": "Capitalisation and spacing changes alter no score",
+   "ok": true,
+   "detail": "12 of 12 unchanged"
+  },
+  {
+   "id": "S08",
+   "desc": "Reordering the skills list alters no score",
+   "ok": true,
+   "detail": "12 of 12 unchanged"
+  },
+  {
+   "id": "S09",
+   "desc": "Changing years of experience to 25 alters no score",
+   "ok": true,
+   "detail": "12 of 12 unchanged"
+  },
+  {
+   "id": "S10",
+   "desc": "Personal details are flagged \"not scored\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "S11",
+   "desc": "Score is not driven by years of experience (correlation reported)",
+   "ok": true,
+   "detail": "correlation of score with years = 0.28"
+  },
+  {
+   "id": "S12",
+   "desc": "Missing must-have evidence generates a question for the candidate, not a rejection",
+   "ok": true,
+   "detail": "8 of 12 resumes generate questions"
+  },
+  {
+   "id": "S13",
+   "desc": "Blank or unknown role produces no score",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "dist": [
+  {
+   "id": "R001",
+   "role": "Java Developer",
+   "years": "3 years",
+   "total": 69.2,
+   "band": "Meets the bar",
+   "points": [
+    30,
+    25,
+    6.7,
+    5,
+    2.5
+   ]
+  },
+  {
+   "id": "R002",
+   "role": "Java Developer",
+   "years": "1 years",
+   "total": 46.5,
+   "band": "Limited evidence on record",
+   "points": [
+    18,
+    21,
+    0,
+    5,
+    2.5
+   ]
+  },
+  {
+   "id": "R003",
+   "role": "Java Developer",
+   "years": "5 years",
+   "total": 51.2,
+   "band": "Limited evidence on record",
+   "points": [
+    18,
+    21.5,
+    6.7,
+    0,
+    5
+   ]
+  },
+  {
+   "id": "R004",
+   "role": "Java Developer",
+   "years": "2 years",
+   "total": 38.7,
+   "band": "Limited evidence on record",
+   "points": [
+    18,
+    14,
+    6.7,
+    0,
+    0
+   ]
+  },
+  {
+   "id": "R005",
+   "role": "QA Engineer",
+   "years": "2 years",
+   "total": 61.7,
+   "band": "Meets the bar",
+   "points": [
+    22.5,
+    25,
+    6.7,
+    5,
+    2.5
+   ]
+  },
+  {
+   "id": "R006",
+   "role": "QA Engineer",
+   "years": "4 years",
+   "total": 57.2,
+   "band": "Limited evidence on record",
+   "points": [
+    22.5,
+    18,
+    6.7,
+    5,
+    5
+   ]
+  },
+  {
+   "id": "R007",
+   "role": "QA Engineer",
+   "years": "1 years",
+   "total": 56,
+   "band": "Limited evidence on record",
+   "points": [
+    30,
+    21,
+    0,
+    5,
+    0
+   ]
+  },
+  {
+   "id": "R008",
+   "role": "QA Engineer",
+   "years": "3 years",
+   "total": 59.2,
+   "band": "Limited evidence on record",
+   "points": [
+    22.5,
+    25,
+    6.7,
+    0,
+    5
+   ]
+  },
+  {
+   "id": "R009",
+   "role": "Business Analyst",
+   "years": "3 years",
+   "total": 76.7,
+   "band": "Strong evidence on record",
+   "points": [
+    30,
+    25,
+    6.7,
+    10,
+    5
+   ]
+  },
+  {
+   "id": "R010",
+   "role": "Business Analyst",
+   "years": "1 years",
+   "total": 61.5,
+   "band": "Meets the bar",
+   "points": [
+    22.5,
+    21.5,
+    0,
+    15,
+    2.5
+   ]
+  },
+  {
+   "id": "R011",
+   "role": "Business Analyst",
+   "years": "4 years",
+   "total": 73.2,
+   "band": "Meets the bar",
+   "points": [
+    30,
+    21.5,
+    6.7,
+    5,
+    10
+   ]
+  },
+  {
+   "id": "R012",
+   "role": "Business Analyst",
+   "years": "2 years",
+   "total": 56,
+   "band": "Limited evidence on record",
+   "points": [
+    22.5,
+    21,
+    0,
+    10,
+    2.5
+   ]
+  }
+ ],
+ "corr": 0.2761860556426912
+}

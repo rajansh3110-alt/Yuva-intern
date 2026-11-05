@@ -1,0 +1,162 @@
+{
+ "pass": 26,
+ "total": 26,
+ "results": [
+  {
+   "id": "A01",
+   "desc": "A complete, valid application passes",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A02",
+   "desc": "Email is stored in lower case",
+   "ok": true,
+   "detail": "test.candidate@example.com"
+  },
+  {
+   "id": "A03",
+   "desc": "Missing consent is rejected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A04",
+   "desc": "Invalid email is rejected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A05",
+   "desc": "Unknown role is rejected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A06",
+   "desc": "Empty skills is rejected",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A07",
+   "desc": "Experience must be a number from 0 to 60",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A08",
+   "desc": "Work sample must be an http(s) link",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A10",
+   "desc": "Spreadsheet formula \"=HYPERLINK(\"...\" is neutralised",
+   "ok": true,
+   "detail": "'=HYPERLINK(\"http://"
+  },
+  {
+   "id": "A11",
+   "desc": "Spreadsheet formula \"+1+1...\" is neutralised",
+   "ok": true,
+   "detail": "'+1+1"
+  },
+  {
+   "id": "A12",
+   "desc": "Spreadsheet formula \"-2+3...\" is neutralised",
+   "ok": true,
+   "detail": "'-2+3"
+  },
+  {
+   "id": "A13",
+   "desc": "Spreadsheet formula \"@SUM(1,1)...\" is neutralised",
+   "ok": true,
+   "detail": "'@SUM(1,1)"
+  },
+  {
+   "id": "A14",
+   "desc": "Control characters are stripped",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A15",
+   "desc": "Very long text is truncated",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A16",
+   "desc": "Application IDs are sequential and padded",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A17",
+   "desc": "Same email and role within 30 days is flagged as a possible duplicate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A18",
+   "desc": "Same email, different role is not a duplicate",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A19",
+   "desc": "Old applications (over 30 days) are not duplicates",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A20",
+   "desc": "Acknowledgement names the role, the application ID and the first name only",
+   "ok": true,
+   "detail": "Hello Test,"
+  },
+  {
+   "id": "A21",
+   "desc": "Acknowledgement states the 3-business-day service target and a human route",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A22",
+   "desc": "Acknowledgement says a person decides and asks for no sensitive documents",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A23",
+   "desc": "Acknowledgement contains no score, decision or ranking",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A24",
+   "desc": "A hostile name cannot inject markup into the email greeting",
+   "ok": true,
+   "detail": "Hello Ignore,"
+  },
+  {
+   "id": "A25",
+   "desc": "Accommodation request switches on the private-contact paragraph",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "A26",
+   "desc": "Sheet columns cover the tracker needs (stage, review status, ack status)",
+   "ok": true,
+   "detail": "17 columns"
+  },
+  {
+   "id": "A27",
+   "desc": "No protected-trait column exists in the tracker",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

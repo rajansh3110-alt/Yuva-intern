@@ -1,0 +1,301 @@
+{
+ "summary": {
+  "inScope": 26,
+  "correct": 14,
+  "safeFallback": 10,
+  "wrong": 2,
+  "outScope": 10,
+  "outScopeSafe": 9,
+  "outScopeWrong": 1
+ },
+ "rows": [
+  {
+   "set": "in-scope",
+   "n": 1,
+   "q": "After I click submit, what comes next?",
+   "expect": "FAQ01",
+   "got": "FAQ01 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 2,
+   "q": "Roughly how long until I get an offer?",
+   "expect": "FAQ02",
+   "got": "FAQ19 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 3,
+   "q": "Can I go for two vacancies at once?",
+   "expect": "FAQ03",
+   "got": "FAQ31 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 4,
+   "q": "I typed my phone number wrongly, how can I correct it?",
+   "expect": "FAQ04/FAQ16",
+   "got": "FAQ16 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 5,
+   "q": "Where can I ask for an accessible interview arrangement?",
+   "expect": "FAQ05/FAQ37",
+   "got": "FAQ05 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 6,
+   "q": "Will the interview be online or in person?",
+   "expect": "FAQ06",
+   "got": "FAQ08 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 7,
+   "q": "Will you give me comments if I do not get the job?",
+   "expect": "FAQ07",
+   "got": "FAQ29 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 8,
+   "q": "I cannot attend my interview slot, what should I do?",
+   "expect": "FAQ08",
+   "got": "FAQ08 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 9,
+   "q": "How can I prepare for the technical interview?",
+   "expect": "FAQ09",
+   "got": "FAQ09 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 10,
+   "q": "Should I send a portfolio with my application?",
+   "expect": "FAQ10",
+   "got": "FAQ10 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 11,
+   "q": "How will you decide whether I am shortlisted?",
+   "expect": "FAQ11",
+   "got": "NO_MATCH (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 12,
+   "q": "Do machines make decisions about candidates?",
+   "expect": "FAQ36/FAQ12/FAQ11",
+   "got": "FAQ13 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 13,
+   "q": "Who can open my information once it is stored?",
+   "expect": "FAQ15/FAQ13",
+   "got": "FAQ14 (answer)",
+   "cls": "WRONG"
+  },
+  {
+   "set": "in-scope",
+   "n": 14,
+   "q": "How can I ask HR to remove an error in my profile?",
+   "expect": "FAQ16/FAQ04",
+   "got": "FAQ30 (answer)",
+   "cls": "WRONG"
+  },
+  {
+   "set": "in-scope",
+   "n": 15,
+   "q": "I applied two weeks ago and heard nothing",
+   "expect": "FAQ17",
+   "got": "FAQ17 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 16,
+   "q": "What does formally accepted mean for an offer?",
+   "expect": "FAQ18",
+   "got": "FAQ18 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 17,
+   "q": "Is the offer amount negotiable?",
+   "expect": "FAQ19",
+   "got": "NO_MATCH (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 18,
+   "q": "What do I need to bring on joining day?",
+   "expect": "FAQ20/FAQ23",
+   "got": "NO_MATCH (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 19,
+   "q": "My email account is not working on day one, who helps?",
+   "expect": "FAQ22",
+   "got": "FAQ22 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 20,
+   "q": "Will a senior colleague show me around when I join?",
+   "expect": "FAQ24/FAQ23",
+   "got": "NO_MATCH (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 21,
+   "q": "How will my manager set my targets?",
+   "expect": "FAQ25",
+   "got": "FAQ25 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 22,
+   "q": "Where is the staff policy portal?",
+   "expect": "FAQ26",
+   "got": "FAQ26 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 23,
+   "q": "How do I tell someone about being harassed by a coworker?",
+   "expect": "FAQ27/HO01",
+   "got": "HO01 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 24,
+   "q": "If the FAQ does not answer my question, who do I ask?",
+   "expect": "FAQ40/FAQ30",
+   "got": "FAQ30 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 25,
+   "q": "Is a degree from a famous university preferred?",
+   "expect": "FAQ35",
+   "got": "FAQ35 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 26,
+   "q": "Can I cancel my application?",
+   "expect": "FAQ38",
+   "got": "FAQ38 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 1,
+   "q": "What is the best programming language to learn?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 2,
+   "q": "Who is the prime minister of India?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 3,
+   "q": "Can you help me write a cover letter?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 4,
+   "q": "How do I get a visa for the UK?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 5,
+   "q": "Where is the nearest metro station?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 6,
+   "q": "What is the dress code?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 7,
+   "q": "Does TalentBridge have a gym?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 8,
+   "q": "How much is a Starbucks coffee?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 9,
+   "q": "Can you fix my printer?",
+   "expect": "no answer",
+   "got": "FAQ04 (answer)",
+   "cls": "WRONG"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 10,
+   "q": "What is machine learning?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  }
+ ]
+}

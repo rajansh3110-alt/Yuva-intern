@@ -1,0 +1,429 @@
+{
+ "summary": {
+  "inScope": 40,
+  "correct": 37,
+  "safeFallback": 3,
+  "wrong": 0,
+  "outScope": 12,
+  "outScopeSafe": 12,
+  "outScopeWrong": 0
+ },
+ "rows": [
+  {
+   "set": "in-scope",
+   "n": 1,
+   "q": "What will I hear after I send in my application?",
+   "expect": "FAQ01",
+   "got": "FAQ01 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 2,
+   "q": "What is the typical time to complete hiring?",
+   "expect": "FAQ02",
+   "got": "FAQ02 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 3,
+   "q": "May I apply to several positions at the same time?",
+   "expect": "FAQ03",
+   "got": "FAQ03 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 4,
+   "q": "How do I edit my application after submitting it?",
+   "expect": "FAQ04",
+   "got": "FAQ04 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 5,
+   "q": "Who handles requests for interview accommodations?",
+   "expect": "FAQ05/FAQ37",
+   "got": "FAQ05 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 6,
+   "q": "Is the interview a panel, a coding test, or a discussion?",
+   "expect": "FAQ06",
+   "got": "FAQ06 (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 7,
+   "q": "Do rejected applicants receive any feedback?",
+   "expect": "FAQ07",
+   "got": "FAQ07 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 8,
+   "q": "Can I change the date of my interview?",
+   "expect": "FAQ08",
+   "got": "FAQ08 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 9,
+   "q": "What should I revise before a technical interview?",
+   "expect": "FAQ09",
+   "got": "FAQ09 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 10,
+   "q": "Do I need to attach a portfolio of my work?",
+   "expect": "FAQ10",
+   "got": "FAQ10 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 11,
+   "q": "On what basis are applications assessed?",
+   "expect": "FAQ11",
+   "got": "FAQ11 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 12,
+   "q": "Is AI used in your hiring process?",
+   "expect": "FAQ12",
+   "got": "FAQ12 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 13,
+   "q": "What data do you collect about applicants?",
+   "expect": "FAQ13",
+   "got": "FAQ13 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 14,
+   "q": "What is your data retention policy for candidates?",
+   "expect": "FAQ14",
+   "got": "FAQ14 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 15,
+   "q": "Who is able to see my application details?",
+   "expect": "FAQ15",
+   "got": "FAQ15 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 16,
+   "q": "How do I get my personal data corrected?",
+   "expect": "FAQ16",
+   "got": "FAQ16 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 17,
+   "q": "No one has replied to my application yet",
+   "expect": "FAQ17",
+   "got": "FAQ17 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 18,
+   "q": "What do you mean by offer acceptance?",
+   "expect": "FAQ18",
+   "got": "FAQ18 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 19,
+   "q": "Can I negotiate my salary offer?",
+   "expect": "FAQ19",
+   "got": "FAQ19 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 20,
+   "q": "What paperwork is needed once I am selected?",
+   "expect": "FAQ20",
+   "got": "NO_MATCH (unsure)",
+   "cls": "safe fallback"
+  },
+  {
+   "set": "in-scope",
+   "n": 21,
+   "q": "How will I be told my joining date and details?",
+   "expect": "FAQ21",
+   "got": "FAQ21 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 22,
+   "q": "Who do I contact if my work laptop does not turn up?",
+   "expect": "FAQ22",
+   "got": "FAQ22 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 23,
+   "q": "What can I expect on my first day at work?",
+   "expect": "FAQ23",
+   "got": "FAQ23 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 24,
+   "q": "Is there a buddy to guide new employees?",
+   "expect": "FAQ24",
+   "got": "FAQ24 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 25,
+   "q": "Who decides my targets for the first month?",
+   "expect": "FAQ25",
+   "got": "FAQ25 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 26,
+   "q": "Where do I find the employee handbook?",
+   "expect": "FAQ26",
+   "got": "FAQ26 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 27,
+   "q": "I want to report bullying by my manager",
+   "expect": "FAQ27/HO01",
+   "got": "HO01 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 28,
+   "q": "I was not paid correctly this month",
+   "expect": "FAQ28/HO04",
+   "got": "HO04 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 29,
+   "q": "Can the assistant give me medical or legal guidance?",
+   "expect": "FAQ29/HO03/HO05",
+   "got": "HO03 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 30,
+   "q": "This information seems outdated, who can fix it?",
+   "expect": "FAQ30/HO09",
+   "got": "HO09 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 31,
+   "q": "Can I see the full job description before applying?",
+   "expect": "FAQ31",
+   "got": "FAQ31 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 32,
+   "q": "What does must-have mean in a job post?",
+   "expect": "FAQ32",
+   "got": "FAQ32 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 33,
+   "q": "What is a nice-to-have requirement?",
+   "expect": "FAQ33",
+   "got": "FAQ33 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 34,
+   "q": "Does a referral guarantee me an interview?",
+   "expect": "FAQ34",
+   "got": "FAQ34 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 35,
+   "q": "Is there a preferred university for candidates?",
+   "expect": "FAQ35",
+   "got": "FAQ35 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 36,
+   "q": "Can a computer program reject candidates automatically?",
+   "expect": "FAQ36/AUTO_DECISION",
+   "got": "FAQ36 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 37,
+   "q": "Where do I ask for a disability accommodation at work?",
+   "expect": "FAQ37/FAQ05",
+   "got": "FAQ05 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 38,
+   "q": "How do I pull my application out of the process?",
+   "expect": "FAQ38",
+   "got": "FAQ38 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 39,
+   "q": "Has my application been shortlisted?",
+   "expect": "FAQ39/HO08",
+   "got": "HO08 (handover)",
+   "cls": "correct"
+  },
+  {
+   "set": "in-scope",
+   "n": 40,
+   "q": "Is there a way to contact a real HR person?",
+   "expect": "FAQ40",
+   "got": "FAQ40 (answer)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 1,
+   "q": "What is the capital of France?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 2,
+   "q": "Can you write me a poem about hiring?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 3,
+   "q": "How do I reset my Netflix password?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 4,
+   "q": "What time does the cafeteria open?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 5,
+   "q": "Who won the cricket match?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 6,
+   "q": "Can you book me a flight to Delhi?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 7,
+   "q": "Translate this sentence into Hindi",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 8,
+   "q": "What is 25 times 4?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 9,
+   "q": "Recommend a good restaurant",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 10,
+   "q": "How do I install Python on my laptop?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 11,
+   "q": "Tell me about the CEO’s family",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  },
+  {
+   "set": "out-of-scope",
+   "n": 12,
+   "q": "Is the office open on Diwali?",
+   "expect": "no answer",
+   "got": "NO_MATCH (unsure)",
+   "cls": "correct"
+  }
+ ]
+}

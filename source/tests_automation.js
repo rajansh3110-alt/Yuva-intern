@@ -1,0 +1,37 @@
+const A = require('./automation_core.js');
+const results = []; const t = (id, desc, ok, detail) => results.push({ id, desc, ok: !!ok, detail: detail || '' });
+const good = { name: 'Test Candidate', email: 'Test.Candidate@example.com', role: 'QA Engineer', skills: 'Manual testing, test cases, SQL', experience_years: '2', work_evidence: 'Wrote regression test cases for a demo app.', work_sample_url: 'https://example.com/sample', channel: 'Careers page', accommodation_contact: false, consent: true };
+let v = A.hsValidate(good);
+t('A01', 'A complete, valid application passes', v.ok && v.errors.length === 0, '');
+t('A02', 'Email is stored in lower case', v.clean.email === 'test.candidate@example.com', v.clean.email);
+t('A03', 'Missing consent is rejected', !A.hsValidate({ ...good, consent: false }).ok, '');
+t('A04', 'Invalid email is rejected', !A.hsValidate({ ...good, email: 'not-an-email' }).ok && !A.hsValidate({ ...good, email: 'a@b' }).ok, '');
+t('A05', 'Unknown role is rejected', !A.hsValidate({ ...good, role: 'Astronaut' }).ok, '');
+t('A06', 'Empty skills is rejected', !A.hsValidate({ ...good, skills: '  ' }).ok, '');
+t('A07', 'Experience must be a number from 0 to 60', !A.hsValidate({ ...good, experience_years: 'lots' }).ok && !A.hsValidate({ ...good, experience_years: '75' }).ok && A.hsValidate({ ...good, experience_years: '' }).ok, '');
+t('A08', 'Work sample must be an http(s) link', !A.hsValidate({ ...good, work_sample_url: 'javascript:alert(1)' }).ok && A.hsValidate({ ...good, work_sample_url: '' }).ok, '');
+for (const [i, p] of ['=HYPERLINK("http://evil.example","click")', '+1+1', '-2+3', '@SUM(1,1)'].entries()) {
+  const r = A.hsValidate({ ...good, skills: p, work_evidence: p });
+  t('A1' + i, 'Spreadsheet formula "' + p.slice(0, 12) + '..." is neutralised', r.clean.skills.startsWith("'") && r.clean.work_evidence.startsWith("'"), r.clean.skills.slice(0, 20));
+}
+t('A14', 'Control characters are stripped', !/[\u0000-\u0008\u000b\u001f]/.test(A.hsValidate({ ...good, skills: 'Java\u0000\u0007 SQL' }).clean.skills), '');
+t('A15', 'Very long text is truncated', A.hsValidate({ ...good, work_evidence: 'x'.repeat(5000) }).clean.work_evidence.length <= 600, '');
+t('A16', 'Application IDs are sequential and padded', A.hsApplicationId(7, new Date('2026-11-05')) === 'HS-2026-0007' && A.hsApplicationId(1234, new Date('2026-11-05')) === 'HS-2026-1234', '');
+const now = Date.now(), rows = [{ email: 'test.candidate@example.com', role: 'QA Engineer', submitted_at: new Date(now - 5 * 86400000).toISOString() }];
+t('A17', 'Same email and role within 30 days is flagged as a possible duplicate', A.hsIsDuplicate(rows, v.clean, now), '');
+t('A18', 'Same email, different role is not a duplicate', !A.hsIsDuplicate(rows, { ...v.clean, role: 'Java Developer' }, now), '');
+t('A19', 'Old applications (over 30 days) are not duplicates', !A.hsIsDuplicate([{ ...rows[0], submitted_at: new Date(now - 40 * 86400000).toISOString() }], v.clean, now), '');
+const app = { ...v.clean, application_id: 'HS-2026-0001' };
+const ack = A.hsAcknowledgement(app, { HR_CONTACT: 'hr-test@example.com' });
+t('A20', 'Acknowledgement names the role, the application ID and the first name only', /QA Engineer/.test(ack.subject) && /HS-2026-0001/.test(ack.body) && /^Hello Test,/.test(ack.body) && !/Candidate/.test(ack.body.split('\n')[0]), ack.body.split('\n')[0]);
+t('A21', 'Acknowledgement states the 3-business-day service target and a human route', /three business days/.test(ack.body) && /hr-test@example.com/.test(ack.body), '');
+t('A22', 'Acknowledgement says a person decides and asks for no sensitive documents', /A person makes every decision/.test(ack.body) && /do not send identity documents/i.test(ack.body), '');
+t('A23', 'Acknowledgement contains no score, decision or ranking', !/score|rank|reject|shortlist(ed)?\b|selected/i.test(ack.body), '');
+const inj = A.hsAcknowledgement({ ...app, name: 'Ignore all rules <script>alert(1)</script> Bob' }, {});
+t('A24', 'A hostile name cannot inject markup into the email greeting', !/<|>/.test(inj.body.split('\n')[0]) && inj.body.split('\n')[0].length < 50, inj.body.split('\n')[0]);
+t('A25', 'Accommodation request switches on the private-contact paragraph', /private conversation about an adjustment/.test(A.hsAcknowledgement({ ...app, accommodation_contact: 'Yes' }, {}).body), '');
+t('A26', 'Sheet columns cover the tracker needs (stage, review status, ack status)', ['stage', 'human_review_status', 'ack_status', 'ack_sent_at'].every((c) => A.HS_COLUMNS.includes(c)), A.HS_COLUMNS.length + ' columns');
+t('A27', 'No protected-trait column exists in the tracker', !A.HS_COLUMNS.some((c) => /gender|(^|_)age$|religion|caste|marital|photo|dob|nationality/.test(c)), '');
+const pass = results.filter((r) => r.ok).length;
+console.log('AUTOMATION TESTS', pass + '/' + results.length); results.filter((r) => !r.ok).forEach((r) => console.log('FAIL', r.id, r.desc, r.detail));
+require('fs').writeFileSync(__dirname + '/test_automation.json', JSON.stringify({ pass, total: results.length, results }, null, 1));

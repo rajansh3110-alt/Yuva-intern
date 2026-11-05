@@ -1,0 +1,322 @@
+[
+ {
+  "id": "FAQ01",
+  "n": 1,
+  "category": "Recruitment",
+  "question": "What happens after I apply?",
+  "answer": "You should receive an acknowledgement. The recruitment team reviews your application against the job-related criteria published for the role and shares updates when available.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ02",
+  "n": 2,
+  "category": "Recruitment",
+  "question": "How long does the hiring process take?",
+  "answer": "Our target is to complete hiring in 38 days or less. Actual timelines vary by role and interview availability.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ03",
+  "n": 3,
+  "category": "Recruitment",
+  "question": "Can I apply for more than one role?",
+  "answer": "Yes, if you meet the published requirements for each role. Tailor your application to the relevant position.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ04",
+  "n": 4,
+  "category": "Recruitment",
+  "question": "Can I update my application?",
+  "answer": "Contact the recruitment team with your application ID and the correction you need. Please do not send sensitive identity documents unless they are formally requested through an approved channel.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ05",
+  "n": 5,
+  "category": "Recruitment",
+  "question": "How do I request an accommodation?",
+  "answer": "Contact the designated HR representative privately. Your request is handled confidentially and does not affect the job-related assessment.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ06",
+  "n": 6,
+  "category": "Recruitment",
+  "question": "What interview formats are used?",
+  "answer": "A role may include a structured interview, a practical exercise or a skills discussion. The recruiter explains the format in advance.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ07",
+  "n": 7,
+  "category": "Recruitment",
+  "question": "Will I receive feedback if rejected?",
+  "answer": "Where feasible, the team gives brief job-related feedback. Detailed feedback is not guaranteed.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ08",
+  "n": 8,
+  "category": "Recruitment",
+  "question": "Can I reschedule an interview?",
+  "answer": "Yes. Tell the recruiter as early as possible and suggest alternative times.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ09",
+  "n": 9,
+  "category": "Recruitment",
+  "question": "What should I prepare for a technical interview?",
+  "answer": "Review the job description and be ready to discuss relevant work, your problem-solving steps and the trade-offs you considered.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ10",
+  "n": 10,
+  "category": "Recruitment",
+  "question": "Is a portfolio mandatory?",
+  "answer": "Only when the job description says it is required. Otherwise it is optional supporting evidence.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ11",
+  "n": 11,
+  "category": "Recruitment",
+  "question": "How is my application assessed?",
+  "answer": "Reviewers use job-related criteria published for the role. A human makes the decisions; any AI output is advisory only.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ12",
+  "n": 12,
+  "category": "Recruitment",
+  "question": "Does the company use AI in recruitment?",
+  "answer": "AI tools may help summarize applications and answer routine questions. Final decisions are always made by authorized people.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ13",
+  "n": 13,
+  "category": "Privacy",
+  "question": "What candidate data is collected?",
+  "answer": "Only the information needed for the recruitment process, handled under approved policies and applicable law.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ14",
+  "n": 14,
+  "category": "Privacy",
+  "question": "How long is candidate data retained?",
+  "answer": "Data is kept according to the company’s approved retention schedule. [HR to insert the approved retention period before publication.]",
+  "human_step": true
+ },
+ {
+  "id": "FAQ15",
+  "n": 15,
+  "category": "Privacy",
+  "question": "Who can see my application?",
+  "answer": "Only authorized recruitment and hiring staff who have a legitimate need.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ16",
+  "n": 16,
+  "category": "Privacy",
+  "question": "Can I ask for my data to be corrected?",
+  "answer": "Yes. Contact the HR privacy contact or your recruiter to request a correction through the approved process.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ17",
+  "n": 17,
+  "category": "Recruitment",
+  "question": "What if I receive no update?",
+  "answer": "Contact your recruiter with your application ID. Our service target is a status update within three business days, where possible.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ18",
+  "n": 18,
+  "category": "Recruitment",
+  "question": "What does offer acceptance mean?",
+  "answer": "It means you have formally accepted an offer under the company’s documented process.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ19",
+  "n": 19,
+  "category": "Recruitment",
+  "question": "Can an offer be negotiated?",
+  "answer": "Contact the recruiter to discuss compensation or other terms. Please do not share sensitive financial information in a public channel.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ20",
+  "n": 20,
+  "category": "Recruitment",
+  "question": "What documents are needed after selection?",
+  "answer": "HR will send an approved checklist. Submit documents only through authorized secure channels.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ21",
+  "n": 21,
+  "category": "Onboarding",
+  "question": "When will I receive my joining details?",
+  "answer": "The onboarding contact shares joining logistics before your start date.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ22",
+  "n": 22,
+  "category": "Onboarding",
+  "question": "Who helps with laptop or account access?",
+  "answer": "Use the onboarding help channel in your welcome message. If an access issue is not resolved, contact your assigned onboarding owner.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ23",
+  "n": 23,
+  "category": "Onboarding",
+  "question": "What happens on Day 1?",
+  "answer": "Expect an orientation, access checks, team introductions and an overview of what your role expects, adjusted for the role.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ24",
+  "n": 24,
+  "category": "Onboarding",
+  "question": "Will I have an onboarding buddy?",
+  "answer": "Where team capacity allows. Confirm with your manager or HR contact.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ25",
+  "n": 25,
+  "category": "Onboarding",
+  "question": "How are first-month goals set?",
+  "answer": "Your manager agrees role-specific priorities and success measures with you during onboarding.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ26",
+  "n": 26,
+  "category": "Onboarding",
+  "question": "Where can I find HR policies?",
+  "answer": "In the approved employee knowledge base. If two documents conflict, ask HR to confirm the current version.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ27",
+  "n": 27,
+  "category": "Sensitive HR",
+  "question": "How do I report workplace harassment?",
+  "answer": "Contact the designated HR contact or the formal reporting channel straight away. This is a sensitive matter and a person will handle it.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ28",
+  "n": 28,
+  "category": "Sensitive HR",
+  "question": "How do I raise a payroll issue?",
+  "answer": "Contact the authorized payroll or HR team through the official confidential channel.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ29",
+  "n": 29,
+  "category": "Sensitive HR",
+  "question": "Can the chatbot give legal or medical advice?",
+  "answer": "No. It gives approved general information only. For personal legal, medical or safety matters, contact qualified support; HR can point you to the right person.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ30",
+  "n": 30,
+  "category": "Sensitive HR",
+  "question": "What if the answer seems incorrect?",
+  "answer": "Ask for a human HR representative and tell them which FAQ topic or answer needs review.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ31",
+  "n": 31,
+  "category": "General HR",
+  "question": "Can I get a copy of the job description?",
+  "answer": "Yes. Use the careers page or ask the recruiter for the current approved version.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ32",
+  "n": 32,
+  "category": "General HR",
+  "question": "What does 'must-have' mean?",
+  "answer": "A skill or requirement genuinely needed to perform the essential duties of the role.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ33",
+  "n": 33,
+  "category": "General HR",
+  "question": "What does 'nice-to-have' mean?",
+  "answer": "A helpful skill that is not required for you to be considered for the role.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ34",
+  "n": 34,
+  "category": "General HR",
+  "question": "Are referrals guaranteed an interview?",
+  "answer": "No. Referred applications are assessed against the same job-related criteria as every other application.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ35",
+  "n": 35,
+  "category": "General HR",
+  "question": "Does the company prefer a particular college?",
+  "answer": "No. We assess relevant skills and evidence, not college prestige.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ36",
+  "n": 36,
+  "category": "General HR",
+  "question": "Can AI reject my application automatically?",
+  "answer": "No. AI may help organize evidence, but a human reviews every decision.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ37",
+  "n": 37,
+  "category": "General HR",
+  "question": "How can I request an accessibility adjustment?",
+  "answer": "Contact HR privately through the approved accommodation process. Share only the information needed to arrange the adjustment.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ38",
+  "n": 38,
+  "category": "General HR",
+  "question": "Can I withdraw my application?",
+  "answer": "Yes. Contact the recruiter or use the official application channel.",
+  "human_step": true
+ },
+ {
+  "id": "FAQ39",
+  "n": 39,
+  "category": "General HR",
+  "question": "What is the status of my application right now?",
+  "answer": "This assistant cannot see live application records. Please contact your recruiter with your application ID.",
+  "human_step": false
+ },
+ {
+  "id": "FAQ40",
+  "n": 40,
+  "category": "General HR",
+  "question": "How can I contact a human?",
+  "answer": "Use the recruiter or HR contact in your application or onboarding email. If you cannot reach them, send a request through the careers page.",
+  "human_step": false
+ }
+]
